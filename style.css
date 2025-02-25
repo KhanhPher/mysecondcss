@@ -1,0 +1,137 @@
+/* styles.css */
+
+/* Skip to Main Content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: white;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Style images using box model */
+img {
+    width: 100%;
+    border: 3px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Grid class styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.grid img {
+    width: 100%;
+    border: 3px solid #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Flex class styles */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex img:nth-child(odd) {
+    border-radius: 20px;
+}
+
+/* Hover effect on navigation links */
+nav ul li a:hover {
+    background-color: #555;
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+
+/* Apply nth-child selector */
+.flex img:nth-child(odd) {
+    border-radius: 20px;
+}
+
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+/* Commented out existing styling for li */
+/*
+nav ul li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+*/
+
+
+/* Main content styles */
+main {
+    background-color: #f4f4f4;
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
