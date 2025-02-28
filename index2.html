@@ -20,12 +20,17 @@
     </nav>
     <main id="main">
         <h2>Gallery</h2>
+        <div id="image">Hover over an image below to display here.</div>
+    
         <div class="grid">
-            <img src="imagess/k5.jpg" alt="pic 3">
-            <img src="imagess/k6.jpg" alt="pic 4">
-            <img src="imagess/k7.jpg" alt="pic 5">
+            <img src="imagess/k5.jpg" alt="Picture 3" onmouseover="upDate(this)" onmouseout="undo()">
+            <img src="imagess/k6.jpg" alt="Picture 4" onmouseover="upDate(this)" onmouseout="undo()">
+            <img src="imagess/k7.jpg" alt="Picture 5" onmouseover="upDate(this)" onmouseout="undo()">
         </div>
     </main>
+    
+    <script src="script.js"></script>
+    
     <footer>
         <p>© 2025 Trang Web Của Bạn</p>
     </footer>
